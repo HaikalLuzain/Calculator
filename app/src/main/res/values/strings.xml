@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="home_title">Assignment 2</string>
+    <string name="label_num_1">Bilangan 1</string>
+    <string name="placeholder_num_1">Masukkan bilangan 1</string>
+    <string name="label_num_2">Bilangan 2</string>
+    <string name="placeholder_num_2">Masukkan bilangan 2</string>
+    <string name="result">Hasil</string>
+</resources>

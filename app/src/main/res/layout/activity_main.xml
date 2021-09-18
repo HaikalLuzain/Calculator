@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    >
+    <!--  Title  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_title"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/font_product_sans"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey_300"/>
+    <!--  End Title  -->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <!--Angka 1-->
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:labelFor="@id/number1"
+            android:layout_marginBottom="5dp"
+            android:text="@string/label_num_1"
+            android:fontFamily="@font/font_product_sans"/>
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="match_parent"
+            android:width="220dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/placeholder_num_1"
+            android:inputType="numberSigned|numberDecimal"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:fontFamily="@font/font_product_sans"/>
+        <!--End Angka 1-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <!--Angka 2-->
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:labelFor="@id/number2"
+            android:layout_marginBottom="5dp"
+            android:text="@string/label_num_2"
+            android:fontFamily="@font/font_product_sans"/>
+
+        <EditText
+            android:id="@+id/number2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:width="220dp"
+            android:layout_weight="1"
+            android:hint="@string/placeholder_num_2"
+            android:inputType="numberSigned|numberDecimal"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:fontFamily="@font/font_product_sans"/>
+        <!--End Angka 2-->
+    </LinearLayout>
+
+
+    <!--Hasil-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:labelFor="@id/result"
+        android:text="@string/result"
+        android:fontFamily="@font/font_product_sans"/>
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:focusable="false"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:fontFamily="@font/font_product_sans"/>
+
+    <!--End Result-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/increment"
+            android:onClick="calculation"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/green_500"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/decrement"
+            android:onClick="calculation"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/green_500"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_horizontal_rule_24"
+            android:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/multiply"
+            android:onClick="calculation"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/green_500"
+            android:src="@drawable/ic_baseline_close_24"
+            android:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/divide"
+            android:onClick="calculation"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/green_500"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_division"
+            android:tint="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
