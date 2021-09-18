@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         EditText eTextNum2 = findViewById(R.id.number2);
         EditText eTextResult = findViewById(R.id.result);
 
+        // Get value from edittext
         String txtNum1 = eTextNum1.getText().toString();
         String txtNum2 = eTextNum2.getText().toString();
 
@@ -29,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Get value from edittext
+        // Parse to double
         double num1 = Double.parseDouble(txtNum1);
         double num2 = Double.parseDouble(txtNum2);
 
-        // Counting and Show result to edittext result
+        // Calculate and Show result to edittext result
         if (v.getId() == R.id.increment) {
             double result = num1 + num2;
             eTextResult.setText(String.valueOf(result));
